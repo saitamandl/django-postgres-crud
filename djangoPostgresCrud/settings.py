@@ -85,8 +85,12 @@ WSGI_APPLICATION = 'djangoPostgresCrud.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'HOST': 'localhost',
+        'PORT': '5500',
+        'USER': 'eg_db_user',
+        'PASSWORD': 'eg_db_pass',
+        'NAME': 'eg_db_name',
     }
 }
 
